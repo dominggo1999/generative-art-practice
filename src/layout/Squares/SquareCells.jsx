@@ -1,6 +1,6 @@
 import React from 'react';
 import tw, { styled } from 'twin.macro';
-import { random } from './util/random';
+import { random } from '../../util/random';
 
 const colorPallete = [
   '#256ADC',
@@ -90,7 +90,7 @@ const RecursiveCells = ({ squares }) => {
   );
 };
 
-const RectCell = ({ size }) => {
+const SquareCells = ({ size }) => {
   const background = colorPallete[random(colorPallete.length) - 1];
 
   const squares = createSizes(size);
@@ -107,4 +107,4 @@ const RectCell = ({ size }) => {
   );
 };
 
-export default RectCell;
+export default SquareCells;
