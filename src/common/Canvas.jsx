@@ -4,6 +4,8 @@ export const Canvas = styled.div`
   ${tw`
     w-[600px] 
     h-[600px]
+    min-w-[600px] 
+    min-h-[600px]
     bg-[#CE2B32] 
     flex 
     flex-wrap

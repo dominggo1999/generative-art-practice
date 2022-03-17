@@ -6,10 +6,14 @@ import HalfAndQuarter from './layout/HalfAndQuarter/HalfAndQuarter';
 import ThreeCircles from './layout/ThreeCircles/ThreeCircles';
 import Triangles from './layout/Triangles/Triangles';
 import DoubleCircle from './layout/DoubleCircle/DoubleCircle';
+import SquareScribble from './layout/SquareScribble/SquareScribble';
+import Hiragana from './layout/Hiragana/Hiragana';
 
 const App = () => {
   return (
     <>
+      <Hiragana />
+      <SquareScribble />
       <DoubleCircle />
       <Triangles />
       <ThreeCircles />

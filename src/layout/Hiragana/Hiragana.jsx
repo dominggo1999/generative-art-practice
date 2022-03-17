@@ -1,24 +1,31 @@
 import React, { useRef } from 'react';
 import short from 'short-uuid';
 import { Canvas, Container } from '../../common/Canvas';
-import DoubleCircleCell from './DoubleCircleCell';
+import HiraganaCell from './HiraganaCell';
 
-const x = 10;
-const y = 10;
+const x = 18;
+const y = 18;
 
-const DoubleCircle = () => {
+const Hiragana = () => {
   const area = Array.from(Array(x * y).keys());
   const canvasRef = useRef();
+  const backgroundColor = '#020401';
 
   return (
     <Container>
-      <Canvas ref={canvasRef}>
+      <Canvas
+        style={{
+          backgroundColor,
+        }}
+        ref={canvasRef}
+      >
         {
           area.map((i) => {
             return (
-              <DoubleCircleCell
+              <HiraganaCell
                 size={600 / x}
                 key={short.generate()}
+                backgroundColor={backgroundColor}
               />
             );
           })
@@ -28,4 +35,4 @@ const DoubleCircle = () => {
   );
 };
 
-export default DoubleCircle;
+export default Hiragana;
